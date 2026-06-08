@@ -54,10 +54,6 @@ app.registerExtension({
                 }
             });
 
-            if (cleanLines.length === 0) {
-                cleanLines.push("#ff0000: ");
-                cleanLines.push("#00ff00: ");
-            }
             colorPromptWidget.value = cleanLines.join("\n");
 
             // ── 2. Hide ALL three native text widgets ──
