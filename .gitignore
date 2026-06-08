@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# Debug log
+_debug_router.log
+
+# OS
+.DS_Store
+Thumbs.db
