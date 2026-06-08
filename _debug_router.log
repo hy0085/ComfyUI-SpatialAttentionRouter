@@ -1,0 +1,127 @@
+[03:12:22.300] SpatialAttentionBias INIT: alpha=0.8, strength=8.0, regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100), ('#00ff00', 100, 123)], num_global_tokens=77, mask_shapes=[torch.Size([512, 512]), torch.Size([512, 512]), torch.Size([512, 512])]
+[03:12:22.305]   compute_bias: spatial=1024 (32×32), tokens=123, applied=[#0000ff[77:100] min=-6.40 spatial=(32, 32); #00ff00[100:123] min=-6.40 spatial=(32, 32)]
+[03:12:22.319]   compute_bias: spatial=1024 (32×32), tokens=123, applied=[#0000ff[77:100] min=-6.40 spatial=(32, 32); #00ff00[100:123] min=-6.40 spatial=(32, 32)]
+[03:12:22.320] FIRST FORWARD: q=(1, 8, 1024, 64) k=(1, 8, 123, 64) bias=(1, 1024, 123) bias_min=-6.400 bias_max=0.000 heads=8 dim_head=64
+[04:50:56.688] SpatialAttentionBias INIT: alpha=0.8, strength=8.0, regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100), ('#00ff00', 100, 123)], num_global_tokens=77, mask_shapes=[torch.Size([512, 512]), torch.Size([512, 512]), torch.Size([512, 512])]
+[04:50:56.693]   compute_bias: spatial=1024 (32×32), tokens=123, applied=[#0000ff[77:100] min=-6.40 spatial=(32, 32); #00ff00[100:123] min=-6.40 spatial=(32, 32)]
+[04:50:56.707]   compute_bias: spatial=1024 (32×32), tokens=123, applied=[#0000ff[77:100] min=-6.40 spatial=(32, 32); #00ff00[100:123] min=-6.40 spatial=(32, 32)]
+[04:50:56.707] FIRST FORWARD: q=(1, 8, 1024, 64) k=(1, 8, 123, 64) bias=(1, 1024, 123) bias_min=-6.400 bias_max=0.000 heads=8 dim_head=64
+[17:14:34.572] SpatialAttentionBias INIT (Output Blending): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100), ('#00ff00', 100, 123)], num_global_tokens=77, mask_shapes=[torch.Size([512, 512]), torch.Size([512, 512]), torch.Size([512, 512])]
+[17:18:13.563] SpatialAttentionBias INIT (Output Blending): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100), ('#00ff00', 100, 123)], num_global_tokens=77, mask_shapes=[torch.Size([512, 512]), torch.Size([512, 512]), torch.Size([512, 512])]
+[17:18:13.567] FIRST FORWARD (Output Blending): q=(1, 8, 1024, 64) k=(1, 8, 123, 64) v=(1, 8, 123, 64) spatial=1024 latent=(32,32) heads=8 dim_head=64 regions=['#0000ff', '#00ff00', '#ff0000'] num_global=77
+[17:18:14.759] SpatialAttentionBias INIT (Output Blending): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100)], num_global_tokens=77, mask_shapes=[torch.Size([512, 512]), torch.Size([512, 512]), torch.Size([512, 512])]
+[17:18:15.702] SpatialAttentionBias INIT (Output Blending): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 154)], num_global_tokens=77, mask_shapes=[torch.Size([512, 512]), torch.Size([512, 512]), torch.Size([512, 512])]
+[17:18:17.603] SpatialAttentionBias INIT (Output Blending): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 154), ('#00ff00', 154, 231)], num_global_tokens=77, mask_shapes=[torch.Size([512, 512]), torch.Size([512, 512]), torch.Size([512, 512])]
+[01:25:38.915] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100), ('#00ff00', 100, 123)], num_global_tokens=77, strength=8.0
+[01:25:38.921] --- INIT V2.1-BETA DIAGNOSTICS ---
+[01:25:38.922] Extra Options Keys: ['n_heads', 'original_shape']
+[01:25:38.922] Batch Size: 1, CFG Array: []
+[01:37:20.529] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100), ('#00ff00', 100, 123)], num_global_tokens=77, strength=8.0
+[01:37:20.533] --- INIT V2.1-BETA DIAGNOSTICS ---
+[01:37:20.533] Extra Options Keys: ['n_heads', 'original_shape']
+[01:37:20.533] Batch Size: 1, CFG Array: []
+[01:37:21.711] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100)], num_global_tokens=77, strength=8.0
+[01:37:22.659] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 154)], num_global_tokens=77, strength=8.0
+[01:37:24.565] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 154), ('#00ff00', 154, 231)], num_global_tokens=77, strength=8.0
+[06:00:01.459] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100), ('#00ff00', 100, 123)], num_global_tokens=77, strength=8.0
+[06:00:01.465] --- INIT V2.1-BETA DIAGNOSTICS ---
+[06:00:01.465] Extra Options Keys: ['n_heads', 'original_shape']
+[06:00:01.466] Batch Size: 1, CFG Array: []
+[06:00:02.622] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100)], num_global_tokens=77, strength=8.0
+[06:00:03.562] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 154)], num_global_tokens=77, strength=8.0
+[06:00:05.431] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 154), ('#00ff00', 154, 231)], num_global_tokens=77, strength=8.0
+[23:41:50.350] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100), ('#00ff00', 100, 123)], num_global_tokens=77, strength=8.0
+[23:41:50.358] --- INIT V2.1-BETA DIAGNOSTICS ---
+[23:41:50.359] Extra Options Keys: ['n_heads', 'original_shape']
+[23:41:50.359] Batch Size: 1, CFG Array: []
+[23:41:51.747] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100)], num_global_tokens=77, strength=8.0
+[23:41:52.773] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 154)], num_global_tokens=77, strength=8.0
+[23:41:54.817] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 154), ('#00ff00', 154, 231)], num_global_tokens=77, strength=8.0
+[00:27:18.055] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100), ('#00ff00', 100, 123)], num_global_tokens=77, strength=8.0
+[00:27:18.060] --- INIT V2.1-BETA DIAGNOSTICS ---
+[00:27:18.061] Extra Options Keys: ['n_heads', 'original_shape']
+[00:27:18.061] Batch Size: 1, CFG Array: []
+[00:27:19.299] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100)], num_global_tokens=77, strength=8.0
+[00:27:20.256] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 154)], num_global_tokens=77, strength=8.0
+[00:27:22.133] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 154), ('#00ff00', 154, 231)], num_global_tokens=77, strength=8.0
+[02:06:13.982] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100), ('#00ff00', 100, 123)], num_global_tokens=77, strength=8.0
+[02:06:13.988] --- INIT V2.1-BETA DIAGNOSTICS ---
+[02:06:13.989] Extra Options Keys: ['n_heads', 'original_shape']
+[02:06:13.989] Batch Size: 1, CFG Array: []
+[02:06:14.002] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.171 | logits min=-4.882 max=4.971 mean=0.000 std=1.001
+[02:06:14.003] Bias Applied — min=-8.000 max=-0.000
+[02:06:15.227] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100)], num_global_tokens=77, strength=8.0
+[02:06:15.230] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.186 | logits min=-4.604 max=4.879 mean=0.002 std=1.000
+[02:06:15.230] Bias Applied — min=-8.000 max=-0.000
+[02:06:16.197] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 154)], num_global_tokens=77, strength=8.0
+[02:06:16.201] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.171 | logits min=-4.534 max=4.896 mean=-0.003 std=1.002
+[02:06:16.202] Bias Applied — min=-8.000 max=-0.000
+[02:06:18.087] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 154), ('#00ff00', 154, 231)], num_global_tokens=77, strength=8.0
+[02:06:18.094] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.172 | logits min=-5.974 max=4.812 mean=-0.001 std=0.996
+[02:06:18.094] Bias Applied — min=-8.000 max=-0.000
+[05:09:11.485] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100), ('#00ff00', 100, 123)], num_global_tokens=77, strength=12.0
+[05:09:11.492] --- INIT V2.1-BETA DIAGNOSTICS ---
+[05:09:11.493] Extra Options Keys: ['n_heads', 'original_shape']
+[05:09:11.493] Batch Size: 1, CFG Array: []
+[05:09:11.507] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.171 | logits min=-5.269 max=5.176 mean=-0.001 std=1.001
+[05:09:11.508] Bias Applied — min=-12.000 max=-0.000
+[05:09:12.703] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100)], num_global_tokens=77, strength=12.0
+[05:09:12.706] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.186 | logits min=-4.466 max=4.564 mean=-0.002 std=0.999
+[05:09:12.707] Bias Applied — min=-12.000 max=-0.000
+[05:09:13.650] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 154)], num_global_tokens=77, strength=12.0
+[05:09:13.654] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.171 | logits min=-4.230 max=4.597 mean=0.000 std=0.990
+[05:09:13.655] Bias Applied — min=-12.000 max=-0.000
+[05:09:15.634] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 154), ('#00ff00', 154, 231)], num_global_tokens=77, strength=12.0
+[05:09:15.641] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.172 | logits min=-5.232 max=4.876 mean=0.001 std=1.002
+[05:09:15.642] Bias Applied — min=-12.000 max=-0.000
+[20:54:10.084] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100), ('#00ff00', 100, 123)], num_global_tokens=77, strength=12.0
+[20:54:10.094] --- INIT V2.1-BETA DIAGNOSTICS ---
+[20:54:10.094] Extra Options Keys: ['n_heads', 'original_shape']
+[20:54:10.095] Batch Size: 1, CFG Array: []
+[20:54:10.110] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.171 | logits min=-5.109 max=5.477 mean=-0.001 std=0.997
+[20:54:10.112] Bias Applied — min=-12.000 max=-0.000
+[20:54:11.336] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100)], num_global_tokens=77, strength=12.0
+[20:54:11.339] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.186 | logits min=-4.835 max=4.747 mean=0.003 std=1.002
+[20:54:11.340] Bias Applied — min=-12.000 max=-0.000
+[20:54:12.286] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 154)], num_global_tokens=77, strength=12.0
+[20:54:12.292] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.171 | logits min=-4.512 max=5.111 mean=-0.000 std=1.003
+[20:54:12.292] Bias Applied — min=-12.000 max=-0.000
+[20:54:14.185] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 154), ('#00ff00', 154, 231)], num_global_tokens=77, strength=12.0
+[20:54:14.192] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.172 | logits min=-5.142 max=5.148 mean=0.000 std=1.002
+[20:54:14.193] Bias Applied — min=-12.000 max=-0.000
+[06:09:36.840] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100), ('#00ff00', 100, 123)], num_global_tokens=77, strength=12.0
+[06:09:36.847] --- INIT V2.1-BETA DIAGNOSTICS ---
+[06:09:36.847] Extra Options Keys: ['n_heads', 'original_shape']
+[06:09:36.847] Batch Size: 1, CFG Array: []
+[06:09:36.859] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.171 | logits min=-5.014 max=5.180 mean=0.003 std=0.993
+[06:09:36.860] Bias Applied — min=-12.000 max=-0.000
+[06:09:45.182] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100), ('#00ff00', 100, 123)], num_global_tokens=77, strength=12.0
+[06:09:45.186] --- INIT V2.1-BETA DIAGNOSTICS ---
+[06:09:45.186] Extra Options Keys: ['n_heads', 'original_shape']
+[06:09:45.187] Batch Size: 1, CFG Array: []
+[06:09:45.189] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.171 | logits min=-5.249 max=5.528 mean=0.001 std=0.999
+[06:09:45.190] Bias Applied — min=-12.000 max=-0.000
+[06:09:46.424] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100)], num_global_tokens=77, strength=12.0
+[06:09:46.427] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.186 | logits min=-4.725 max=5.114 mean=-0.000 std=1.003
+[06:09:46.427] Bias Applied — min=-12.000 max=-0.000
+[06:09:47.370] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 154)], num_global_tokens=77, strength=12.0
+[06:09:47.374] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.171 | logits min=-4.484 max=4.550 mean=0.000 std=0.996
+[06:09:47.374] Bias Applied — min=-12.000 max=-0.000
+[06:09:49.278] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 154), ('#00ff00', 154, 231)], num_global_tokens=77, strength=12.0
+[06:09:49.284] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.172 | logits min=-5.093 max=5.457 mean=0.001 std=1.002
+[06:09:49.285] Bias Applied — min=-12.000 max=-0.000
+[07:27:11.136] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100), ('#00ff00', 100, 123)], num_global_tokens=77, strength=12.0
+[07:27:11.141] --- INIT V2.1-BETA DIAGNOSTICS ---
+[07:27:11.141] Extra Options Keys: ['n_heads', 'original_shape']
+[07:27:11.142] Batch Size: 1, CFG Array: []
+[07:27:11.154] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.171 | logits min=-5.098 max=4.716 mean=0.001 std=1.001
+[07:27:11.155] Bias Applied — min=-12.000 max=-0.000
+[07:27:12.433] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 100)], num_global_tokens=77, strength=12.0
+[07:27:12.437] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.186 | logits min=-4.936 max=4.897 mean=0.000 std=1.003
+[07:27:12.437] Bias Applied — min=-12.000 max=-0.000
+[07:27:13.400] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 154)], num_global_tokens=77, strength=12.0
+[07:27:13.408] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.171 | logits min=-4.667 max=4.677 mean=-0.001 std=1.000
+[07:27:13.409] Bias Applied — min=-12.000 max=-0.000
+[07:27:15.403] SpatialAttentionBias INIT (v2.1-beta): regions=['#0000ff', '#00ff00', '#ff0000'], affinity_ranges=[('#0000ff', 77, 154), ('#00ff00', 154, 231)], num_global_tokens=77, strength=12.0
+[07:27:15.409] Attention Tensor Stats — mask min=0.000 max=1.000 mean=0.172 | logits min=-5.289 max=5.281 mean=-0.001 std=1.002
+[07:27:15.409] Bias Applied — min=-12.000 max=-0.000

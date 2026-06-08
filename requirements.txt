@@ -1,0 +1,9 @@
+# Spatial Attention Router - Dependencies
+# These should already be available in a standard ComfyUI environment:
+# torch
+# numpy
+# Pillow
+# comfyui
+
+# No additional pip dependencies required for v0.1.0.
+# The plugin uses only standard ComfyUI + PyTorch APIs.
