@@ -1,3 +1,33 @@
+# ComfyUI-ColorRegion
+
+I've tried some similar prompt region control plugins before, but wasn't satisfied — either the results were poor or too many nodes were needed. So I built my own. Here's the result:
+
+![UI](images/界面.png)
+
+| Mask | Output |
+|---|---|
+| ![Left Mask](images/在左侧的女孩蒙版.png) | ![Left](images/在左侧的女孩.png) |
+| ![Right Mask](images/在右侧的女孩蒙版.png) | ![Right](images/在右侧的女孩.png) |
+
+## Parameters
+
+| Parameter | Description | Recommended |
+|---|---|---|
+| `strength` | Isolation intensity — higher values keep regions more separate | 12–15 normal, 18–25 maximum |
+| `feather_px` | Feather radius — controls edge softness between regions | 20–40 (default 30) |
+
+Bleeding → raise strength / lower CFG. Artifacts → lower strength / lower CFG. Hard edges → raise feather_px.
+
+Supports `BREAK` syntax. Other syntaxes (such as `ADDCOL`, `ADDROW`) are not supported.
+
+## References
+
+- [DenseDiffusion](https://github.com/naver-ai/DenseDiffusion) (CVPR 2024) — Attention Modulation
+- [Attention Couple](https://github.com/laksjdjf/Attention-Couple) — Output Blending
+- [ComfyUI](https://github.com/comfyanonymous/ComfyUI) — Modular AI image generation framework
+
+---
+
 # ComfyUI-ColorRegion（颜色分区）
 
 我之前使用过一些类似的提示词分区控制的插件，但是感觉效果不是很好，要不然就是节点太多了，所以我自己做了一个，效果如图：
@@ -25,31 +55,3 @@
 - [DenseDiffusion](https://github.com/naver-ai/DenseDiffusion) (CVPR 2024) — Attention Modulation 机制
 - [Attention Couple](https://github.com/laksjdjf/Attention-Couple) — Output Blending 算法框架
 - [ComfyUI](https://github.com/comfyanonymous/ComfyUI) — 模块化 AI 图像生成框架
-
----
-
-I've tried some similar prompt region control plugins before, but wasn't satisfied — either the results were poor or too many nodes were needed. So I built my own. Here's the result:
-
-![UI](images/界面.png)
-
-| Mask | Output |
-|---|---|
-| ![Left Mask](images/在左侧的女孩蒙版.png) | ![Left](images/在左侧的女孩.png) |
-| ![Right Mask](images/在右侧的女孩蒙版.png) | ![Right](images/在右侧的女孩.png) |
-
-## Parameters
-
-| Parameter | Description | Recommended |
-|---|---|---|
-| `strength` | Isolation intensity — higher values keep regions more separate | 12–15 normal, 18–25 maximum |
-| `feather_px` | Feather radius — controls edge softness between regions | 20–40 (default 30) |
-
-Bleeding → raise strength / lower CFG. Artifacts → lower strength / lower CFG. Hard edges → raise feather_px.
-
-Supports `BREAK` syntax. Other syntaxes (such as `ADDCOL`, `ADDROW`) are not supported.
-
-## References
-
-- [DenseDiffusion](https://github.com/naver-ai/DenseDiffusion) (CVPR 2024) — Attention Modulation
-- [Attention Couple](https://github.com/laksjdjf/Attention-Couple) — Output Blending
-- [ComfyUI](https://github.com/comfyanonymous/ComfyUI) — Modular AI image generation framework
