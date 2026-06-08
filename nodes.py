@@ -208,7 +208,7 @@ class SpatialAttentionRouterNode:
     RETURN_TYPES = ("MODEL", "CONDITIONING", "IMAGE")
     RETURN_NAMES = ("model", "conditioning", "mask_preview")
     FUNCTION = "apply"
-    CATEGORY = "conditioning/颜色分区 (ColorRegion)"
+    CATEGORY = "conditioning/spatial"
     DESCRIPTION = (
         "颜色分区 (ColorRegion): 用颜色蒙版控制每句提示词生效的区域。"
         "在内置画板上涂色或连接蒙版图片。"
@@ -259,9 +259,10 @@ class SpatialAttentionRouterNode:
             if base_conditioning is not None:
                 log.info("[AFFINITY] fallback: returning base_conditioning as-is")
                 return (model, base_conditioning, _build_mask_preview({}))
-            # Encode global prompt only
-            cond, pooled = clip.encode_from_tokens(
-                clip.tokenize(global_prompt), return_pooled=True
+            # Encode global prompt via PromptAffinityParser for BREAK support
+            from .affinity_parser import PromptAffinityParser
+            cond, pooled, _ = PromptAffinityParser.tokenize_prompt(
+                clip, global_prompt if global_prompt else ""
             )
             log.info(f"[AFFINITY] fallback global_cond shape: {cond.shape}")
             log.info(f"[AFFINITY] fallback pooled shape: {pooled.shape}")
@@ -505,7 +506,7 @@ class SpatialAttentionRouterAdvancedNode:
     RETURN_TYPES = ("MODEL",)
     RETURN_NAMES = ("model",)
     FUNCTION = "apply"
-    CATEGORY = "conditioning/颜色分区 (ColorRegion)"
+    CATEGORY = "conditioning/spatial"
     DESCRIPTION = (
         "颜色分区 - 高级 (ColorRegion Advanced): 对预编码的 conditioning 应用颜色分区路由，适合高级工作流。"
     )
@@ -641,7 +642,7 @@ class ColorMaskPreviewNode:
     RETURN_TYPES = ("IMAGE",)
     RETURN_NAMES = ("preview",)
     FUNCTION = "preview"
-    CATEGORY = "conditioning/颜色分区 (ColorRegion)"
+    CATEGORY = "conditioning/spatial"
     DESCRIPTION = "预览检测到的颜色分区 (Preview detected color regions)."
 
     def preview(
